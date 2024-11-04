@@ -1,0 +1,17 @@
+meta {
+  name: Atualiza as categorias através do id
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{Host}}/categories/2
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name":"Development"
+  }
+}

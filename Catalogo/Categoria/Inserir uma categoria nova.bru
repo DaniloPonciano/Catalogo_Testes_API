@@ -1,0 +1,17 @@
+meta {
+  name: Inserir uma categoria nova
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{Host}}/categories
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Livro"
+  }
+}

@@ -3,6 +3,8 @@ package com.catalog.entities;
 import java.time.Instant;
 import java.util.Objects;
 
+import com.catalog.dto.CategoryDTO;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -33,6 +35,10 @@ public class Category {
 	public Category(Long id, String name) {
 		this.id = id;
 		this.name = name;
+	}
+
+	public Category(CategoryDTO data){
+
 	}
 
 	public Long getId() {

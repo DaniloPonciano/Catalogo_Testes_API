@@ -1,0 +1,21 @@
+meta {
+  name: Atualiza um produto pelo ID
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{Host}}/products
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Harry Potter  e a Pedra Filosofal",
+    "description": "Harry, um garoto órfão que descobre que é um bruxo ao completar 11 anos. Ele é convidado a estudar na Escola de Magia e Bruxaria de Hogwarts, onde faz novos amigos, como Ron e Hermione, e enfrenta desafios mágicos. A trama gira em torno da busca pela Pedra Filosofal, um objeto poderoso que pode proporcionar imortalidade, enquanto Harry descobre mais sobre seu passado e a ameaça do vilão Voldemort.",
+    "price": "58.99",
+    "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/1-big.jpg",
+    "date": "2024-10-24T21:25:40.123450z"
+  }
+}

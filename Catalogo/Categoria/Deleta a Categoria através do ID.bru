@@ -1,0 +1,17 @@
+meta {
+  name: Deleta a Categoria através do ID
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{Host}}/categories/3
+  body: none
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Tests"
+  }
+}
